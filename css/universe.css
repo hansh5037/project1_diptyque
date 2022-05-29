@@ -1,0 +1,356 @@
+@charset 'utf-8';
+.sub-visual {
+    background-color: #000;
+}
+.uni-visual-img {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 145%;
+    background-image: url('../images/uni_banner1.png');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: moveD 1.3s 0.2s both;
+}
+
+.uni-year {
+    padding: 80px 0 1em 0;
+}
+
+.uni-con-img img {
+    width: 100%;
+    max-width: 420px;
+}
+.uni-con-txt h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+}
+
+.uni-1-1 .uni-con-txt > img {
+    position: relative;
+    top: 30px;
+    left: -8px;
+    width: 15%;
+    max-width: 90px;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+.uni-1-2 img {
+    width: 100%;
+}
+.uni-line-box {
+    position: relative;
+    border: 3px solid #000;
+    border-width: 3px 0;
+}
+.uni-line-box:after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% - 18px);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-width: 1px 0;
+}
+.uni-3 {
+    padding: 1.5em 0;
+    text-align: center;
+    background-color: #f3f2f0;
+}
+.uni-pf-logo li {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+.uni-pf-logo li img {
+    width: 95%;
+    max-width: 210px;
+}
+
+
+.uni-5 .uni-con-txt h4 {
+    color: #fff;
+}
+.uni-5 .uni-con-txt {
+    color: #ccc;
+}
+/* 휴대폰 소형 */
+@media screen and (max-width: 460px) {
+    .uni-1-1 .uni-con-txt > img {
+        top: 20px;
+        width: 20%;
+    }
+    .uni-5 .uni-year {
+        padding-bottom: 0;
+    }
+    .uni-5 .uni-year img {
+        width: 100px;
+    }
+    .uni-5 .uni-con-txt {
+        font-size: 0.8em;
+    }
+}
+
+/* 휴대폰 */
+@media screen and (max-width: 767px) {
+    .sub-visual {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .uni-visual-img {
+        width: 130%;
+        left: -15%;
+    }
+    .uni-con-txt {
+        padding: 1em;
+    }
+    .uni-con-img {
+        text-align: center;
+    }
+    .uni-1-1 .uni-con-txt > img {
+        top: 15px;
+    }
+    .uni-1-2 img {
+        margin-top: 60px;
+    }
+    .d-only {
+        display: none;
+    }
+    .uni-pf-logo li {
+        width: 33%;
+    }
+    .uni-year {
+        padding-left: 1em;
+    }
+    .uni-5 {
+        position: relative;
+        width: 100%;
+        background-image: url('../images/m_uni_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+ 
+    .uni-5:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 300%;
+    }
+    .uni-5-inner {
+        position: absolute;
+        bottom: 7%;
+        left: 0;
+    }
+    .uni-con-pfimg img {
+        position: relative;
+        top: 3em;
+        left: -5%;
+        width: 110%;
+    }
+    .uni-con-pfimg {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+}
+
+
+/* 테블릿 부터 */
+@media screen and (min-width: 768px) {
+    .visual-txt {
+        float: left;
+    }
+    .uni-visual-img {
+        float: right;
+        right: 0;
+    }
+    .uni-con:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .uni-con-img {
+        float: left;
+    }
+    .floattxt {
+        float: left;
+    }
+    .uni-1-1 .uni-con-txt {
+        position: relative;
+        top: -50px;
+    }
+    .uni-1-2 img {
+        margin-top: 150px;
+    }
+    .uni-4 .uni-con-img {
+        margin-bottom: 155px;
+    }
+
+ 
+
+
+
+}
+/* 테블릿 만 */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .uni-visual-img {
+        width: 65%;
+        max-width: 600px;
+    }
+    .uni-con-img {
+        width: 40%;
+    }
+    .uni-con-txt {
+        width: 60%;
+    }
+    .d-only {
+        display: none;
+    }
+    .uni-pf-logo li {
+        width: 33%;
+    }
+    .uni-line-box .uni-con-txt {
+        width: 100%;
+        padding: 2em 5em;
+    }
+    .uni-5 {
+        position: relative;
+        width: 100%;
+        background-image: url('../images/m_uni_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+    }
+ 
+    .uni-5:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 300%;
+    }
+    .uni-5-inner {
+        position: absolute;
+        bottom: 7%;
+        left: 0;
+    }
+    .uni-con-pfimg img {
+        position: relative;
+        top: 3em;
+        left: -5%;
+        width: 110%;
+    }
+    .uni-con-pfimg {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .uni-5 .uni-con-txt {
+        width: 90%;
+    }
+    .uni-5 .uni-year {
+        padding-bottom: 80px;
+    }
+    .uni-5 .uni-year img {
+        width: 250px;
+    }
+    .uni-5 .uni-con-txt {
+        font-size: 1.2em;
+        padding-bottom: 80px;
+    }
+
+    
+}
+/* 데스크탑만 */
+@media screen and (min-width: 1280px) {
+    .uni-con-img {
+        width: 35%;
+    }
+    .uni-con-txt {
+        width: 50%;
+    }
+    .uni-1-1 .uni-con-txt {
+        top: 100px;
+    }
+    .uni-1-1 .uni-con-txt > img {
+        left: -30px;
+    }
+    .uni-con2-2 .uni-con-txt {
+        width: calc(50% - 80px);
+    }
+    .uni-con2-2 {
+        position: relative;
+        top: -100px;
+        left: 80px;
+    }
+    .uni-con2-2 img {
+        position: relative;
+        left: 114px;
+        max-width: 306px;
+    }
+    .uni-con2-2 .uni-con-txt {max-width: calc(65% - 80px)}
+    .uni-3 .wrap {
+        padding: 2.5em;
+    }
+    .uni-line-box .uni-con-txt {
+        width: 100%;
+        padding: 1em 16em;
+    }
+    .uni-5 .uni-con-txt h4 {
+        font-size: 1.2em;
+    }
+    .uni-5 .uni-con-txt {
+        width: 100%;
+        font-size: 1.1em;
+    }
+    .uni-5 .uni-year {
+        padding-top: 8em;
+    }
+    .uni-con-pfimg img {
+        width: 55.2%;
+    }
+    .uni-con-pfimg {
+        width: 100%;
+    }
+    .uni-5 .uni-con-txt, .uni-5 .uni-year {
+        position: relative;
+        top: -60px;
+    }
+    .uni-5 .uni-con-txt {
+        padding: 0 15%;
+    }
+    .uni-5 {
+        position: relative;
+        width: 100%;
+        background-image: url('../images/uni_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+    }
+    .uni-5:before {
+        content: '';
+        display: block;
+        padding-top: 80%;
+    }
+    .uni-5 .uni-5-inner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .m-uni-pfimg {
+        display: none;
+    }
+
+}
+/* 메가 */
+@media screen and (min-width: 1600px) {
+    .uni-5 .uni-con-txt {
+        padding: 0 30%;
+    }
+}

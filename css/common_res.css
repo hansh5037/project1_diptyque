@@ -1,0 +1,212 @@
+@charset 'utf-8';
+/* 모바일 ~767px */
+@media screen and (max-width: 767px) {
+    .main-logo {
+        width: 60px;
+        left: calc(50% - 30px);
+    }
+    .m-gnb-label {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    #m-gnb {
+        display: block;
+    }
+    #dip-gnb {
+        display: none;
+    }
+    .search-form {
+        display: none;
+    }
+    .utill-menu {display: none;}
+    #dip-container {
+        margin-top: 80px;
+    }
+    .ft-service li {
+        height: 60px;
+        font-size: 0.75em;
+    }
+    .ft-con {
+        font-size: 0.8em;
+    }
+    .ft-depth1 {
+        width: 50%;
+        height: 230px;
+        padding: 1em 2em;
+        border-top: 1px solid #000;
+        font-size: 0.8em;
+    }
+    .ft-depth1 span {
+        padding: 0 0 8px 0;
+    }
+    .ft-bottom-wrap {
+    }
+    .email-submit input {
+        width: 200px;
+        height: 32px;
+    }
+    .email-submit button {
+        width: 32px;
+        height: 32px;
+    }
+    .ft-info ol li {
+        float: left;
+        width: 98%;
+        height: 40px;
+        margin: 1%;
+        line-height: 40px;
+        border: 1px solid rgba(255,255,255,0.3);
+        text-align: center;
+    }
+
+}
+
+/* 태블릿부터 768px~ */
+@media screen and (min-width: 768px) {
+    .hd-top {
+        height: 100px;
+    }
+    .main-logo {
+        background-size: 80%;
+    }
+    .utill-menu {display: none;}
+    #footer {
+        margin-top: 180px;
+    }
+    .ft-depth1 {
+        margin-top: 20px;
+    }
+
+    .ft-con {
+        float: left;
+        width: 80%;
+        height: 800px;
+        padding-top: 80px;
+    }
+    .ft-logo {
+        float: left;
+        width: 20%;
+        height: 800px;
+        background-position: 0 80px;
+        background-size: 80%;
+    }
+    .ft-info ol li {
+        padding-right: 25px;
+    }
+}
+
+/* 태블릿만 768px ~ 1279px */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #m-gnb {
+        display: block;
+    }
+    #dip-gnb {
+        display: none;
+    }
+    .search-form {
+        display: none;
+    }
+    #dip-container {
+        margin-top: 100px;
+    }
+    .ft-logo {
+        background-size: 80%;
+    }
+}
+
+/* 데스크탑 1280px~ */
+@media screen and (min-width: 1280px) {
+    #header {position: absolute;}
+    .m-utill-menu {display: none;}
+    .utill-menu { 
+        display: block;
+        float: right;
+        font-size: 14px;
+        line-height: 100px;
+    }
+    .utill-menu li {
+        float: left;
+        padding: 0 22px;
+    }
+    .utill-menu li a {
+        color: #999;
+    }
+    /* gnb 배경 */
+    #header:before {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 48px;
+        background-color: #000;
+        z-index: -1;
+    }
+    #dip-gnb {
+        display: block;
+    }
+    #m-gnb {
+        display: none;
+    }
+    .m-search-form {
+        display: none;
+    }
+    .m-gnb-label {
+        display: none;
+    }
+    #dip-container {
+        margin-top: 148px;
+    }
+
+    /* footer */
+    .ft-service li {
+        width: 16.6666%;
+        /* height: 80px; */
+    }
+    .ft-logo {
+        background-size: 70%;
+    }
+    .ft-info-inner a {
+        font-size: 3.6em;
+    }
+    .ft-news {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 80px;
+    }
+    .ft-con {
+        height: 600px;
+    }
+    .ft-logo {
+        height: 600px;
+    }
+    /* top */
+    .gototop {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    .gototop a {
+        width: 60px;
+        height: 60px;
+        padding-top: 16px;
+        font-size: 1em;
+    }
+    .gototop img {
+        display: block;
+    }
+
+}
+
+/* 메가 데스크탑 1400px~ */
+@media screen and (min-width: 1600px) {
+    #dip-gnb .depth2 li a {
+        padding-left: 3.8em;
+    }
+    #dip-gnb .depth1 > a {
+        padding: 0 4em;
+    }
+}
